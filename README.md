@@ -3,7 +3,7 @@
 DevPals News is a modern and dynamic web application built to deliver real-time news updates. Powered by a live News API, it allows users to browse and filter breaking news across various categories seamlessly.
 
 ## 🚀 Live Demo
-**
+*https://ishadeveloper-pro.github.io/NEWS-APP/*
 
 ---
 
