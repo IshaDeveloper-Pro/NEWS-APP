@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+     <link rel="stylesheet"href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()"       class="company-logo">
+                <img  class="logo-img" src="images/Dark Red logo.png" alt="logo"><span> DEVpals NEWS</span>
+            </a>
+            
+            <div class="nav-links" id="nav-links">
+                
+               <ul class="flex">
+    <button id="home-button" class="home-button">Home</button>
+    <li class="hover-link nav-item" id="ipl">IPL</li>
+    <li class="hover-link nav-item" id="finance">Finance</li>
+    <li class="hover-link nav-item" id="politics">Politics</li>
+</ul>
+            </div>
+             <a href="#" class="nav-toggle  hover-links" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+       </a>
+            <div class="search-bar  flex">
+                
+                <input type="text"  id="search-text"     class="news-input" placeholder="e.g. Science" autocomplete="off">
+                <button  id="search-button" class="search-button">Search</button>
+                
+            </div>
+        </div>
+    </nav>
+
+   <main>
+   
+    <div class="cards-container container flex"id="cards-container">
+        
+    
+    </div>
+   </main>
+   <template id="template-news-card">
+    <div class="card">
+            <div class="card-header">
+                <img src="https://support.primaryimage.uk/wp-content/uploads/2017/07/400x200.png" id="news-img" alt="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title" id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 21/03/2026</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus dolor sapiente saepe nobis, excepturi velit voluptates tenetur veritatis veniam!</p>
+            </div>
+        </div>
+   </template>
+<script type="module" src="script.js"></script>
+</body>
+</html>
