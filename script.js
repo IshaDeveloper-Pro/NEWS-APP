@@ -1,25 +1,19 @@
-import { API_KEY } from './config.js';
-
+const API_KEY = "853c5634376d4b53bc4425977990282f";
 const searchUrl = "https://newsapi.org/v2/everything?q=";
 const categoryUrl = "https://newsapi.org/v2/top-headlines?country=in&category=";
 
-document.addEventListener(
-    'DOMContentLoaded', () =>
-{
+document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
+    const navLinks = document.getElementById('nav-links');
         
-        if(navToggle && navLinks){
-
-    navToggle.addEventListener('click', () => {
-
-        navLinks.classList.toggle('active');
-    });
-   
-}
+    if(navToggle && navLinks){
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 });
 
-window.addEventListener('load', () =>fetchNews("India"));
+window.addEventListener('load', () => fetchNews("India"));
 
 function reload() {
     window.location.reload();
